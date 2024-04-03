@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    border-bottom: .1875rem solid var(--brand-2);
+}
+
+header button {
+    background-image: url("/src/assets/icons/moon-icon.svg");
+    background-color: var(--gray6);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .3125rem;
+    border: none;
+    cursor: pointer;
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.highlight {
+    color: var(--brand-2);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
