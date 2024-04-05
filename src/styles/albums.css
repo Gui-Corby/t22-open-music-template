@@ -31,7 +31,7 @@ img {
     margin-bottom: 3vh;
     background-color: var(--gray7);
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: space-around;
     flex-shrink: 1;
