@@ -6,89 +6,124 @@
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/header.css">
-
+    <link rel="stylesheet" href="./src/styles/price-range.css">
+    <link rel="stylesheet" href="./src/styles/genres.css">
+    <link rel="stylesheet" href="./src/styles/albums.css">
     <title>Open Music</title>
+
   </head>
   <body>
     <!-- CABEÇALHO -->
     <header>
       <!-- DESENVOLVA AQUI OS ELEMENTOS DO CABEÇALHO -->
-      <h1> <span class="highlight">o</span>pen <span class="highlight">m</span>usic</h1>
-      <button></button>
+      <div class="header__content">
+        <h1> <span class="highlight">o</span>pen <span class="highlight">m</span>usic</h1>
+        <button></button>
+      </div>
+
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
       <!-- SEÇÃO DE FILTRO POR GENERO -->
-      <section>
+      <section class="section__genre-list">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
         <h2>Gênero Musical</h2>
         <ul>
-          <li>Todos</li>
-          <li>Pop</li>
-          <li>MPB</li>
-          <li>Forró</li>
-          <li>Samba</li>
-          <li>Baião</li>
-          <li>Rap</li>
-          <li>Hip-Hop</li>
+
+          <li><input type="radio" name="genre" id="todos" value="todos">
+            <label for="todos">Todos</label>
+          </li>
+
+          <li><input type="radio" name="genre" id="pop" value="pop">
+            <label for="pop">Pop</label>
+          </li>
+          
+          <li><input type="radio" name="genre" id="mpb" value="mpb">
+            <label for="mpb">MPB</label>
+          </li>
+
+          <li><input type="radio" name="genre" id="forro" value="forro">
+            <label for="forro">Forró</label>
+          </li>
+
+          <li><input type="radio" name="genre" id="samba" value="samba">
+            <label for="samba">Samba</label>
+          </li>
+
+          <li><input type="radio" name="genre" id="baiao" value="baiao">
+            <label for="baiao">Baião</label>
+          </li>
+
+          <li><input type="radio" name="genre" id="rap" value="rap">
+            <label for="rap">Rap</label>
+          </li>
+
+          <li><input type="radio" name="genre" id="hiphop" value="hiphop">
+            <label for="hiphop">Hip-Hop</label>
+          </li>
+
         </ul>
       </section>
 
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
-      <section>
+      <section class="section__range-selection">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-        <h2>Definir Preço</h2>
-        <p>Até R$ 100</p>
+        <div class="range-selection--price_display">
+          <h2>Definir Preço</h2>
+          <p>Até <span class="highlight">R$ 100</span></p>
+        </div>
 
-        <input type="range" name="" id="">
+        <input class="range-selection--input" type="range" name="" id="">
       </section>
 
       <!-- SEÇÃO DE ALBUNS -->
-      <section>
+      <section class="section__albums">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-        <h2>Albuns Encontrados</h2>
+        <h2 class="albums-title">Albuns Encontrados</h2>
         <div class="first_row">
-          <div class="first_row-item1">
+          <div class="first_row-item" id="first_img">
             <img src="./src/assets/imgs/cover-1.png" alt="">
-            <h2>Acabou o Chorare</h2>
 
-            <div>
+            <h2 class="item_title">Acabou o Chorare</h2>
+
+            <div class="item_description">
               <p>Novos Baianos</p>
               <p>MPB</p>
             </div>
 
-            <div>
+            <div class="item_price-buy">
               <p>R$ 137,91</p>
               <button>Comprar</button>
             </div>
           </div>
 
-          <div class="first_row-item2">
+          <div class="first_row-item">
             <img src="./src/assets/imgs/cover-2.png" alt="">
-            <h2>The Wall</h2>
 
-            <div>
-              <p>The Wall</p>
+            <h2 class="item_title">The Wall</h2>
+
+            <div class="item_description">
               <p>Pink Floyd</p>
+              <p>Rock</p>
             </div>
 
-            <div>
+            <div class="item_price-buy">
               <p>R$ 123,56</p>
               <button>Comprar</button>
             </div>
           </div>
 
-          <div class="first_row-item3">
+          <div class="first_row-item" id="third">
             <img src="./src/assets/imgs/cover-3.jpg" alt="">
-            <h2>To Pimp a Butterfly</h2>
+            <h2 class="item_title">To Pimp a Butterfly</h2>
 
-            <div>
+            <div class="item_description">
               <p>Kendrick Lamar</p>
               <p>Rap</p>
             </div>
 
-            <div>
+            <div class="item_price-buy">
               <p>R$ 102,66</p>
               <button>Comprar</button>
             </div>
@@ -97,47 +132,47 @@
         </div>
 
         <div class="second_row">
-          <div class="second_row-item1">
+          <div class="second_row-item">
             <img src="./src/assets/imgs/cover-2.png" alt="">
-            <h2>The Wall</h2>
+            <h2 class="item_title">The Wall</h2>
 
-            <div>
+            <div class="item_description">
               <p>The Wall</p>
               <p>Pink Floyd</p>
             </div>
 
-            <div>
+            <div class="item_price-buy">
               <p>R$ 123,56</p>
               <button>Comprar</button>
             </div>
           </div>
 
-          <div class="second_row-item2">
+          <div class="second_row-item">
             <img src="./src/assets/imgs/cover-1.png" alt="">
-            <h2>Acabou o Chorare</h2>
+            <h2 class="item_title">Acabou o Chorare</h2>
 
-            <div>
+            <div class="item_description">
               <p>Novos Baianos</p>
               <p>MPB</p>
             </div>
 
-            <div>
+            <div class="item_price-buy">
               <p>R$ 137,91</p>
               <button>Comprar</button>
             </div>
 
           </div>
 
-          <div class="second_row-item3">
+          <div class="second_row-item">
             <img src="./src/assets/imgs/cover-3.jpg" alt="">
-            <h2>To Pimp a Butterfly</h2>
+            <h2 class="item_title">To Pimp a Butterfly</h2>
 
-            <div>
+            <div class="item_description">
               <p>Kendrick Lamar</p>
               <p>Rap</p>
             </div>
 
-            <div>
+            <div class="item_price-buy">
               <p>R$ 102,66</p>
               <button>Comprar</button>
             </div>

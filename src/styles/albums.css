@@ -1,0 +1,84 @@
+.section__albums {
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 7vh;
+    /* display: flex;
+    flex-direction: column;
+       flex-wrap: wrap; */
+}
+
+.albums-title {
+    padding-bottom: 2vh;
+}
+
+img {
+    object-fit: cover;
+    height: 18rem;
+    margin-top: -0.5625rem;
+}
+
+.first_row, .second_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .9375rem
+}
+
+.first_row-item, .second_row-item {
+    height: 26.25rem;
+    width: 19.25rem;
+    margin-bottom: 3vh;
+    background-color: var(--gray7);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.first_row-item:hover, .second_row-item:hover {
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.item_title {
+    font-weight: 600;
+    font-size: 1.375rem;
+    margin-inline: 4%;
+}
+
+.item_description {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 4%;
+}
+
+.item_price-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 4%;
+}
+
+.item_price-buy p {
+    font-weight: 600;
+    font-size: 1.1875rem;
+}
+
+.item_price-buy button {
+    background-color: var(--brand-2);
+    border: none;
+    border-radius: 4px;
+    color:white;
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.item_price-buy button:hover {
+    opacity: 0.6;
+}

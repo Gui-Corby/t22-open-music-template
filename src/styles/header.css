@@ -1,10 +1,12 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* max-width: 1024px; */
+    width: 100%;
+    position: fixed;
+    z-index: 1;
     padding-top: 3vh;
-    padding-bottom: 5vh;
-    border-bottom: .1875rem solid var(--brand-2);
+    background-color: white;
+    margin: auto;
+
 }
 
 header button {
@@ -17,6 +19,17 @@ header button {
     cursor: pointer;
     width: 1.875rem;
     height: 1.875rem;
+}
+
+.header__content {
+    max-width: 1024px;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1875rem solid var(--brand-2);
+    margin-inline: 3%;
+    margin: auto;
 }
 
 h1 {

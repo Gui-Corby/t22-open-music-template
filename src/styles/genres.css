@@ -1,0 +1,16 @@
+main {
+    padding-top: 150px;
+}
+
+.section__genre-list {
+    max-width: 1024px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875rem;
+    padding-top: 4vh;
+}

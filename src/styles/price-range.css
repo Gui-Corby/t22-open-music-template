@@ -1,0 +1,42 @@
+.section__range-selection {
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 6vh;
+}
+
+.range-selection--price_display {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+}
+
+.range-selection--price_display p {
+    font-weight: 600;
+    font-size: 1.375rem;
+}
+
+.highlight {
+    color: var(--brand-1);
+}
+
+.range-selection--input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  background-color: var(--brand-1);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.range-selection--input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.5rem solid var(--brand-1);
+}

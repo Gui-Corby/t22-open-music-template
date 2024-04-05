@@ -18,6 +18,4 @@
 body {
     background-color: var(--gray8);
     font-family: var(--font-family);
-    margin: auto;
-    max-width: 1024px;
 }
