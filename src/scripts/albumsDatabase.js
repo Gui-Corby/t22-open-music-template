@@ -4,14 +4,14 @@ export const albumList = [
       genre: "MPB",
       band: "Novos Baianos",
       price: "137.91",
-      img: "./src.assets/imgs/cover-1.png",
+      img: "./src/assets/imgs/cover-1.png",
     },
     {
       title: "The Wall",
       genre: "Rock",
       band: "Pink Floyd",
       price: "123.56",
-      img: "./src/assets/imgs/cover-1.png",
+      img: "./src/assets/imgs/cover-2.png",
     },
     {
       title: "To Pimp a Butterfly",
