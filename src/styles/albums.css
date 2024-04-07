@@ -37,11 +37,7 @@ img {
     flex-basis: auto;
     flex-grow: 1;
 }
-
-.first_row-item:hover, .second_row-item:hover {
-    opacity: 0.8;
-    z-index: 0;
-} */
+*/
 
 .item_title {
     font-weight: 600;

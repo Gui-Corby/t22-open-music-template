@@ -1,5 +1,7 @@
 import { applyInputRangeStyle } from "./inputRange.js";
 import { albumList } from "./albumsDatabase.js";
+import { themeChange, themeAnalasys } from "./theme.js";
+import { getData } from "./api.js";
 
 function routine() {
     applyInputRangeStyle();
@@ -33,5 +35,32 @@ function generateAlbumsList(albums) {
         albumListContainer.appendChild(listItem)
     });
 }
+// generateAlbumsList(albumList);
 
-generateAlbumsList(albumList);
+getData()
+    // .then(response => {
+    //     console.log('API response:', response);
+    //     return response.json();
+    // })
+    .then(apiData => {
+        generateAlbumsList(apiData);
+    })
+    .catch(error => {
+        console.log('Error fetching data from the API:', error);
+    });
+
+
+
+const inputRange = document.querySelector('.range-selection--input');
+const priceDisplay = document.querySelector('.range-selection--price_display span');
+
+inputRange.addEventListener("input", (event) => {
+    event.preventDefault();
+    const minPrice = parseInt(inputRange.value);
+    priceDisplay.textContent = `R$ ${minPrice}`;
+    const filteredAlbums = inputRange.value ? apiData.filter(apiDataAlbum => parseFloat(apiDataAlbum.price) <= minPrice)
+    : apiData; 
+    generateAlbumsList(filteredAlbums);
+})
+
+themeAnalasys();

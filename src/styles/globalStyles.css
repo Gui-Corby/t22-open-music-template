@@ -19,3 +19,21 @@ body {
     background-color: var(--gray8);
     font-family: var(--font-family);
 }
+
+body.dark-mode {
+    background-color: var(--gray-1);
+    color: var(--gray7);
+}
+
+body.dark-mode header {
+    background-color: var(--gray-1);
+}
+
+body.dark-mode li.album-item {
+    background-color: var(--gray-2) ;
+}
+
+body.dark-mode button#header__theme-button {
+    background-image: url("/src/assets/icons/sun-icon.svg");
+    background-color: var(--gray3);
+}
