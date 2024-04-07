@@ -28,7 +28,6 @@ header button {
     justify-content: space-between;
     align-items: center;
     border-bottom: .1875rem solid var(--brand-2);
-    margin-inline: 3%;
     margin: auto;
 }
 
