@@ -10,7 +10,7 @@ header {
 }
 
 header button {
-    background-image: url("./src/assets/icons/moon-icon.svg");
+    background-image: url("../assets/icons/moon-icon.svg");
     background-color: var(--gray6);
     background-repeat: no-repeat;
     background-position: center;

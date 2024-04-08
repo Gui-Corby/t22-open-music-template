@@ -34,6 +34,6 @@ body.dark-mode li.album-item {
 }
 
 body.dark-mode button#header__theme-button {
-    background-image: url("./src/assets/icons/sun-icon.svg");
+    background-image: url("../assets/icons/sun-icon.svg");
     background-color: var(--gray3);
 }
